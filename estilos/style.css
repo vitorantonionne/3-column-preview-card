@@ -1,8 +1,8 @@
 @charset "UTF-08";
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -11,16 +11,71 @@
 }
 
 body {
-    height: 100vh;
-    font-size: 1.5rem;
+    height: 100%;
     background-color: hsl(0, 0%, 95%);
-
+    font-size: 1.5rem;
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
+#container {
+    display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.card {
+    padding: 4rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.img,
+.card > h1 {
+    margin-bottom: 3rem;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3.4rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+
+    background-color: hsl(0deg, 0%, 100%);;
+    color: black;
+    mix-blend-mode: screen;
+    text-decoration: none;
+    font-weight: normal;
+
+    width: 65%;
+    padding: 1rem 0.8rem;
+    margin-top: 10rem;
+    
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 2rem;  
+}
+
+.link:hover {
+    color: white;
+    background-color: black;
+    mix-blend-mode: screen;
+
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
 #card-one {
     background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 #card-two {
@@ -29,18 +84,55 @@ body {
 
 #card-three {
     background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
+@media screen and (max-width: 846px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
 
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img {
+        width: 17%;
+    }
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+    .link {
+        margin-top: 2rem;
+        width: 35%;
+    }
 
-/* 
-font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif;
+    .card p {
+        width: 74%;
+    }
 
-Bright orange: hsl(31, 77%, 52%)
-Dark cyan: hsl(184, 100%, 22%)
-Very dark cyan: hsl(179, 100%, 13%)
- */
+    #card-one {
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 1rem;
+    }
+
+    #card-three {
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+.attribution {
+    text-align: center;
+    margin-block: 4rem;
+    font-size: 1.2rem;
+    font-weight: bold; 
+    color: rgba(0, 0, 0, 0.808);
+}
+.attribution a { 
+    color: rgb(0, 0, 0); 
+}
