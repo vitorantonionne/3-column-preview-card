@@ -42,8 +42,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3column-preview-card-component-2SjECh8BGv))
-- Live Site URL: [Add live site URL here](https://vitorantonionne.github.io/3-column-preview-card/#)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/3column-preview-card-component-2SjECh8BGv))
+- Live Site URL: [live site URL here](https://vitorantonionne.github.io/3-column-preview-card/#)
 
 ## My process
 
