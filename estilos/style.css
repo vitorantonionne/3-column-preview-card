@@ -1,0 +1,46 @@
+@charset "UTF-08";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 95%);
+
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#card-one {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#card-two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card-three {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+ */
